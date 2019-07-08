@@ -1,0 +1,128 @@
+<p class="summary">Oak is a High Performance Computing (HPC) storage system available to research groups and projects at Stanford. Hosted by the Stanford Research Computing Center (SRCC) and sometimes referred as&nbsp;<em>cheap and deep storage,&nbsp;</em>Oak provides the research community with inexpensive storage for research projects, storage that can grow in order to accommodate the projects&rsquo; increasing storage requirements.</p>
+<p class="summary"><em>Please contact us at&nbsp;<a href="mailto:srcc-support@stanford.edu?subject=Oak%20storage">srcc-support@stanford.edu</a>&nbsp;for any questions about Oak.</em></p>
+<p class="summary">&nbsp;</p>
+<h2>Oak Service Overview</h2>
+<p class="summary">Oak is available for use by all Stanford University and affiliated research projects and groups. This includes healthcare researchers, as well as researchers from the SLAC National Accelerator Laboratory (SLAC).&nbsp; Please note that a four year <span class="highlight selected">comm</span>itment from the PI is required when when purchasing Oak.</p>
+<p class="summary"><strong><span style="font-weight: 600;">For more details about Oak, please look at the official Oak Service Description available&nbsp;</span><a href="https://stanford.box.com/s/t979jbzw5ejbf2u2w0781hayke1k384y" style="font-weight: 600;">here</a><span style="font-weight: 600;">&nbsp;(Stanford only).</span></strong></p>
+<p class="summary">Two flavors of the service are available for purchase with a 4-year commitment:</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">
+				<p class="summary">Service flavor</p>
+			</th>
+			<th scope="col">
+				<p class="summary">Service description</p>
+			</th>
+			<th scope="col">
+				<p class="summary">Service price</p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<p class="summary"><strong>Filespace</strong></p>
+			</td>
+			<td>
+				<p class="summary">PIs/Faculty rent disk space in increments of&nbsp;<strong><span style="font-weight: 600; font-size: 22px;">10 TB and 1.5 million inodes**.</span></strong><br />
+					&nbsp;</p>
+				<p class="summary">&nbsp;</p>
+			</td>
+			<td>
+				<p class="summary">$41.67 per 10TB / month</p>
+				<p><em>or $50 per TB / year</em></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="summary"><strong>JBOD</strong></p>
+			</td>
+			<td>
+				<p class="summary">PIs/Faculty purchase one or more full disk arrays (JBODs), with&nbsp;<strong><span style="font-weight: 600; font-size: 22px;">550 TB usable capacity&nbsp;</span></strong><span style="font-size: 22px;">each,&nbsp;</span><span style="background-color: transparent;">that is/are supported </span><span style="background-color: transparent;">and administered by the SRCC team as part of the overall&nbsp;</span><span style="background-color: transparent;">Oak service.<br />
+					A JBOD comes with a maximum of 82.5 million inodes**.</span></p>
+			</td>
+			<td>
+				<p class="summary">JBOD cost* + $666.67 per JBOD / month<br />
+					(service only)</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p class="summary"><em>*JBOD pricing is dependent upon hard disk market variations (<a href="mailto:research-computing-support@stanford.edu?subject=Oak%20JBOD%20pricing">contact us for current pricing</a>)<br />
+	**inodes are filesystem objects like files and directories&nbsp;</em></p>
+<p class="summary">Oak storage is readily available from both the <a href="http://www.sherlock.stanford.edu/">Sherlock</a> and <a href="http://xstream.stanford.edu/">XStream</a> HPC clusters, but also from multi-protocol gateways (Globus, SFTP, NFSv4, Samba/CIFS...). <em>Restrictions may apply and personalized gateway service will incur additional costs to the PI.</em></p>
+<p class="summary"><strong><em><span style="font-weight: 600;">Important!</span></em>&nbsp;<span style="font-weight: 600;">Oak is NOT <a href="https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act">HIPAA</a> compliant and&nbsp;is not a storage choice for any data that include <a href="https://en.wikipedia.org/wiki/Protected_health_information">PHI</a> or <a href="https://en.wikipedia.org/wiki/Personally_identifiable_information">PII</a>. The system is approved for storing Low and Moderate Risk data only and is not suitable for data classified as <a href="https://dataclass.stanford.edu">High Risk</a>. For more information about data risk classifications, see the <a href="https://uit.stanford.edu/guide/riskclassifications">Information Security Risk Classification page</a>.&nbsp;</span></strong></p>
+<p class="summary">&nbsp;</p>
+<h2>Oak group space</h2>
+<ul>
+	<li>
+		<p class="summary">There are only group/project spaces on Oak (similar to how /share/PI or /scratch/PI work on Sherlock).</p>
+	</li>
+	<li>
+		<p class="summary">When a group directory is created on Oak, we use the PI/faculty SUNet ID as the group name (eg. /oak/stanford/groups/SUNetID/).</p>
+	</li>
+	<li>
+		<p class="summary">Or, alternatively, a project directory can be created under /oak/stanford/projects/.</p>
+	</li>
+	<li>
+		<p class="summary">File system group quotas are used to limit the amount of file system space group/project can use.</p>
+	</li>
+	<li>
+		<p class="summary">Each group is provided with a personal dashboard that provides information about available disk space (quota) and usage.</p>
+	</li>
+</ul>
+<p class="summary">&nbsp;</p>
+<div>
+	<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Managing users</h2>
+	<ul>
+		<li>
+			<p class="summary">The PI provides an initial list of SUNet IDs having access to the new group or project shared directory on Oak.</p>
+		</li>
+		<li>
+			<p class="summary">The PI gets access to a <a href="https://workgroup.stanford.edu">Stanford Workgroup</a> to manage authorized users (please be aware that changes made in Workgroup Manager may take up to 24 hours to be propagated to Oak).</p>
+		</li>
+		<li>
+			<p class="summary">Members of the workgroup can then organize files as they desire in the group/project directory (POSIX ACLs are supported).&nbsp;</p>
+		</li>
+	</ul>
+	<div>&nbsp;</div>
+	<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Accessing Oak from Sherlock and XStream</h2>
+</div>
+<div>
+	<p class="summary">Oak storage is available from all nodes on <a href="http://www.sherlock.stanford.edu/">Sherlock</a> and <a href="http://xstream.stanford.edu/">XStream</a> under /oak. Like Sherlock&#39;s /scratch, Oak is based on the Lustre parallel filesystem and is connected to Sherlock (1.0 and 2.0) and XStream through Infiniband.</p>
+	<p class="summary"><strong><em>Important!</em></strong> You need an account on both Oak and Sherlock (or XStream) to access Oak from Sherlock (or XStream). The environment variable <strong>$OAK</strong> should be defined on Sherlock and XStream and contains the path to your Oak group directory. You may also use the full path starting with /oak as described above.</p>
+	<p class="summary">&nbsp;</p>
+	<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Archiving files to Oak from Sherlock</h2>
+	<p class="summary">The <a href="https://github.com/hpc/mpifileutils">mpiFileUtils</a> utilities are designed to copy files in parallel so you can quickly archives terabytes of data from scratch to Oak. The example below shows how to launch screen and launch a job that uses the dcp tool to copy a large directory:</p>
+	<div>
+		<div>[sunetid@sh-ln01 login_node ~]$ screen</div>
+		<div>[sunetid@sh-ln01 login_node ~]$ module load system mpifileutils</div>
+		<div>[sunetid@sh-ln01 login_node ~]$ srun -p dev -n 2 dcp $SCRATCH/dir $OAK/scratch_archive/</div>
+		<div>&nbsp;</div>
+		<p class="summary">If you&#39;re a <a href="http://www.sherlock.stanford.edu/">Sherlock</a> owner, you may want to replace `-p dev` with `-p your_partition` and increase the number of MPI tasks (`-n`) to copy even faster!</p>
+		<p class="summary">&nbsp;</p>
+		<div>
+			<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Can I access Oak from my desktop/laptop?</h2>
+		</div>
+		<p class="summary">Yes, please see the&nbsp;<a href="/private/oak-gateways">Oak Gateways</a>&nbsp;page (Stanford only).</p>
+		<p class="summary">&nbsp;</p>
+		<div>
+			<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Can I mount Oak on my own Linux cluster at Stanford?</h2>
+		</div>
+		<p class="summary">Yes, the SRCC team can deploy specific Oak NFSv4 gateway(s) to mount your Oak group/project directory on your Linux-based compute cluster (or desktop for specific applications). It is mandatory to use SUNet IDs on your cluster and Kerberos is required to access Oak.&nbsp;Such a service will incur additional costs to the PI.</p>
+		<p class="summary">&nbsp;</p>
+		<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">What about automatic backups?</h2>
+		<div>
+			<p class="summary">While the hardware configuration is quite robust, <strong>Oak does not provide local or remote data backup</strong>, and should be considered as a single copy. The SRCC is currently evaluating options for adding automatic remote backups (to cloud storage). Such a service will incur additional costs to the PI.<br />
+				&nbsp;</p>
+			<h2 style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Under the hood</h2>
+			<p class="summary">Oak is a capacity-oriented HPC storage system designed for long term storage that doesn&#39;t rely on a single vendor implementation. It was designed by the SRCC team using COTS (commercial off-the-shelf) components and open source software to provide up to billions of inodes and tens of petabytes of storage space to answer Stanford researchers&#39; big data storage needs.</p>
+			<p class="summary">The software of Oak is based on the&nbsp;<a href="http://lustre.org" target="_blank">Lustre filesystem</a>&nbsp;and the <a href="https://github.com/cea-hpc/robinhood/wiki">Robinhood Policy Engine</a>. Personalized usage dashboards are provided thanks to the <a href="https://grafana.com/">Grafana</a>&nbsp;and <a href="https://www.docker.com/">Docker</a> projects.</p>
+			<p class="summary">Oak&#39;s scalable and highly available architecture is based on MD cells (metadata) and I/O cells (data) each with external SAS-3 switches and high-density JBOD chassis designed for the cloud market. The Lustre servers are interconnected through a high-bandwidth and low-latency Infiniband fabric (56 Gb/s links). Oak storage components are redundant, from servers to disk array controllers and data paths between servers and disks. It also provides disk mirroring for the metadata and double-parity RAID in a 8+2 configuration for the data (file content). The use of additional parity allows the storage system to continue to function even if two disks in a volume of ten disks fail simultaneously.</p>
+			<p class="summary">SRCC&#39;s Oak project was first presented at the Lustre Administrators and Developers workshop in September 2016 in Paris. The slides are available&nbsp;<a href="https://www.eofs.eu/_media/events/lad16/07_thiell_cheap_n_deep.pdf" target="_blank">here</a>.</p>
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+
