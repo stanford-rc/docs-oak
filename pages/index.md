@@ -67,7 +67,4 @@ The [mpiFileUtils](https://github.com/hpc/mpifileutils) utilities are designed t
 
 If you're a [Sherlock owner](https://www.sherlock.stanford.edu/docs/overview/concepts/#how-to-become-an-owner), you may want to replace `-p dev` with `-p your_partition` and increase the number of MPI tasks (`-n`) to copy even faster (in parallel)!
 
-
-## Oak group space
-
 If you would like to contribute to the site or ask a question, please [open an issue]({{ site.repo }}/issues)
