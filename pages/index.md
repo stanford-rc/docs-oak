@@ -16,7 +16,7 @@ Learn <a href="{{ site.baseurl }}/about">more about Oak</a> or contact us at [sr
 
 ## Oak Service Overview
 
-Oak is available for use by all Stanford University and affiliated research projects and groups. This includes healthcare researchers, as well as researchers from the SLAC National Accelerator Laboratory (SLAC). Please note that a four year commitment from the PI is required when when purchasing Oak.
+Oak is available for use by all Stanford University and affiliated research projects and groups. This includes healthcare researchers, as well as researchers from the SLAC National Accelerator Laboratory (SLAC). Please note that a four year commitment from the PI is required when purchasing Oak.
 
 {% include alert.html type="info" title="Service Description" content="For more details about Oak, please look at the official Oak Service Description available <a href='https://stanford.box.com/s/t979jbzw5ejbf2u2w0781hayke1k384y'>here</a> (Stanford only)." %}
 
