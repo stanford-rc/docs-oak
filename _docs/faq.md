@@ -31,12 +31,12 @@ Oak storage is available from all nodes on [Sherlock](http://www.sherlock.stanfo
 The [mpiFileUtils](https://github.com/hpc/mpifileutils) utilities are designed to copy files in parallel so you can quickly archives terabytes of data from scratch to Oak. The example below shows how to launch screen and launch a job that uses the dcp tool to copy a large directory:
 
 ```bash
-[sunetid@sh-ln01 login_node ~]$ screen
-[sunetid@sh-ln01 login_node ~]$ module load system mpifileutils
-[sunetid@sh-ln01 login_node ~]$ srun -p dev -n 2 dcp $SCRATCH/dir $OAK/scratch_archive/
+[login_node ~]$ screen
+[login_node ~]$ module load system mpifileutils
+[login_node ~]$ srun -p dev -n 2 dcp $SCRATCH/dir $OAK/scratch_archive/
 ```
 
-If you're a [Sherlock](http://www.sherlock.stanford.edu/) owner, you may want to replace **`-p dev`** with **`-p your_partition`** and increase the number of MPI tasks (`-n`) to copy even faster!
+If you're a [Sherlock](http://www.sherlock.stanford.edu/) owner, you may want to replace **`-p dev`** with **`-p your_partition`** and increase the number of MPI tasks (**`-n`**) to copy even faster!
 
 
 ## Can I access Oak from my desktop/laptop?
