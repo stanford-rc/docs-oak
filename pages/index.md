@@ -49,22 +49,5 @@ Oak storage is readily available from both the [Sherlock](http://www.sherlock.st
  *  The PI gets access to a [Stanford Workgroup](https://workgroup.stanford.edu) to manage authorized users (please be aware that changes made in Workgroup Manager may take up to 4 hours to be propagated to Oak).
  *  Members of the workgroup can then organize files as they desire in the group/project directory (POSIX ACLs are supported).
 
-## Accessing Oak from Sherlock
-
-Oak storage is available from all nodes on Sherlock under /oak. Like Sherlock's /scratch, Oak is based on the Lustre parallel filesystem and is connected to Sherlock (1.0 and 2.0) through low latency Infiniband network.
-
-{% include alert.html type="warning" title="Important!" content="You need an account on both Oak and Sherlock to access Oak from Sherlock. The environment variable $OAK should be defined on Sherlock and XStream and contains the path to your Oak group directory. You may also use the full path starting with /oak as described above." %}
-
-## Archiving files to Oak from Sherlock
-
-The [mpiFileUtils](https://github.com/hpc/mpifileutils) utilities are designed to copy files in parallel so you can quickly archives terabytes of data from scratch to Oak. The example below shows how to launch screen and launch a job that uses the dcp tool to copy a large directory:
-
-```console
-[sunetid@sh-ln01 login_node ~]$ screen
-[sunetid@sh-ln01 login_node ~]$ module load system mpifileutils
-[sunetid@sh-ln01 login_node ~]$ srun -p dev -n 2 dcp $SCRATCH/dir $OAK/scratch_archive/
-```
-
-If you're a [Sherlock owner](https://www.sherlock.stanford.edu/docs/overview/concepts/#how-to-become-an-owner), you may want to replace `-p dev` with `-p your_partition` and increase the number of MPI tasks (`-n`) to copy even faster (in parallel)!
 
 If you would like to contribute to the site or ask a question, please [open an issue]({{ site.repo }}/issues)
