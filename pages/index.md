@@ -27,9 +27,8 @@ Two flavors of the service are available for purchase with a 4-year commitment:
 | **Filespace**   | PIs/Faculty rent disk space in increments of **10 TB and 1.5 million inodes**[^1]. | $41.67 per 10TB / month<br> <small>*or $50 per TB / year*</small> |
 | **JBOD**        | PIs/Faculty purchase one or more full disk arrays (JBODs), with **550 TB usable capacity** each, that is/are supported and administered by the SRCC team as part of the overall Oak service. A JBOD comes with a maximum of 82.5 million inodes**. | JBOD cost[^2] + $666.67 per JBOD / month<br><small>(service only)</small> |
 
-
-<small>[^1]: JBOD pricing is dependent upon hard disk market variations ([contact us for current pricing](mailto:research-computing-support@stanford.edu?subject=Oak%20JBOD%20pricing))</small><br />
-<small>[^2]: inodes are filesystem objects like files and directories</small>
+[^1]: JBOD pricing is dependent upon hard disk market variations ([contact us for current pricing](mailto:srcc-support@stanford.edu?subject=Oak%20JBOD%20pricing))
+[^2]: inodes are filesystem objects like files and directories
 
 Oak storage is readily available from both the [Sherlock](http://www.sherlock.stanford.edu/) and [XStream](http://xstream.stanford.edu/) HPC clusters, but also from multi-protocol gateways (Globus, SFTP, NFSv4, Samba/CIFS...). *Restrictions may apply and personalized gateway service will incur additional costs to the PI.*
 
