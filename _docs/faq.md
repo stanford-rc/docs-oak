@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 tags:
  - storage
- - xstream
+ - sherlock
  - archive
 ---
 
@@ -22,7 +22,7 @@ tags:
 
 ## Can I Access Oak from Sherlock and XStream?
 
-Oak storage is available from all nodes on [Sherlock](http://www.sherlock.stanford.edu/) and [XStream](http://xstream.stanford.edu/) under /oak. Like Sherlock's /scratch, Oak is based on the Lustre parallel filesystem and is connected to Sherlock (1.0 and 2.0) and XStream through Infiniband.
+Oak storage is available from all nodes on [Sherlock](http://www.sherlock.stanford.edu/) and [XStream](http://xstream.stanford.edu/) under /oak. Like Sherlock's /scratch, Oak is based on the Lustre parallel filesystem and is connected to Sherlock (1.0 and 2.0) and XStream through a low-latency Infiniband network.
 
 {% include alert.html type="warning" title="Important!" content="You need an account on both Oak and Sherlock (or XStream) to access Oak from Sherlock (or XStream). The environment variable **$OAK** should be defined on Sherlock and XStream and contains the path to your Oak group directory. You may also use the full path starting with /oak as described above." %}
 
@@ -36,7 +36,7 @@ The [mpiFileUtils](https://github.com/hpc/mpifileutils) utilities are designed t
 [sunetid@sh-ln01 login_node ~]$ srun -p dev -n 2 dcp $SCRATCH/dir $OAK/scratch_archive/
 ```
 
-If you're a [Sherlock](http://www.sherlock.stanford.edu/) owner, you may want to replace `-p dev` with `-p your_partition` and increase the number of MPI tasks (`-n`) to copy even faster!
+If you're a [Sherlock](http://www.sherlock.stanford.edu/) owner, you may want to replace **`-p dev`** with **`-p your_partition`** and increase the number of MPI tasks (`-n`) to copy even faster!
 
 
 ## Can I access Oak from my desktop/laptop?
