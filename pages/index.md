@@ -26,12 +26,12 @@ very affordable price. Oak is available from multi-protocol gateways (like Globu
 mounted on the Sherlock HPC cluster. Based on off-the-shelf components and open source software, it can easily
 grow in order to accommodate the research projects’ increasing storage requirements, up to tens of petabytes.
 
-Two flavors of the storage service are available for purchase (charged monthly):
+Two flavors of the storage service are available (charged monthly):
 
 |  Service flavor     | Service description | Service price |
 |---------------------|---------------------|---------------|
-| **10TB FILESPACE**  | PIs/Faculty rent disk space in increments of **10 TB and 1.5 million inodes**[^1]. | $42.95 per 10TB / month<br> <small>*or $0.004295/GB/month*</small> |
-| **250TB FILESPACE** | PIs/Faculty rent disk space in increments of **250 TB and 37.5 million inodes**[^1]. | $550 per 250TB / month<br> <small>*or $0.0022/GB/month*</small> |
+| **10TB FILESPACE**  | Disk space in increments of **10 TB and 1.5 million inodes**[^1]. | $42.95 per 10TB / month<br> <small>*or $0.004295/GB/month*</small> |
+| **250TB FILESPACE** | Disk space in increments of **250 TB and 37.5 million inodes**[^1]. | $550 per 250TB / month<br> <small>*or $0.0022/GB/month*</small> |
 
 [^1]: inodes are filesystem objects like files and directories
 
