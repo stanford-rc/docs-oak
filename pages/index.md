@@ -16,23 +16,37 @@ Learn <a href="{{ site.baseurl }}/about">more about Oak</a> or contact us at [sr
 
 ## Oak Service Overview
 
-Oak is available for use by all Stanford University and affiliated research projects and groups. This includes healthcare researchers, as well as researchers from the SLAC National Accelerator Laboratory (SLAC). Please note that a four year commitment from the PI is required when purchasing Oak.
+Oak is a storage system provided by the Stanford Research Computing Center
+([SRCC](https://srcc.stanford.edu/)) and available to all researchers at Stanford University.
+It is based on [Lustre](http://lustre.org), a distributed parallel file system with wide scalability,
+both in performance and storage capacity.
 
-{% include alert.html type="info" title="Service Description" content="For more details about Oak, please look at the official Oak Service Description available <a href='https://stanford.box.com/s/t979jbzw5ejbf2u2w0781hayke1k384y'>here</a> (Stanford only)." %}
+Oak is particularly well suited to store large group-shared datasets, curated output of HPC job campaigns and archives at a
+very affordable price. Oak is available from multi-protocol gateways (like Globus, SFTP and SMB) and is
+mounted on the Sherlock HPC cluster. Based on off-the-shelf components and open source software, it can easily
+grow in order to accommodate the research projects’ increasing storage requirements, up to tens of petabytes.
 
-Two flavors of the service are available for purchase with a 4-year commitment:
+Two flavors of the storage service are available for purchase (charged monthly):
+
+|  Service flavor     | Service description | Service price |
+|---------------------|---------------------|---------------|
+| **10TB FILESPACE**  | PIs/Faculty rent disk space in increments of **10 TB and 1.5 million inodes**[^1]. | $42.95 per 10TB / month<br> <small>*or $0.004295/GB/month*</small> |
+| **250TB FILESPACE** | PIs/Faculty rent disk space in increments of **250 TB and 37.5 million inodes**[^1]. | $550 per 250TB / month<br> <small>*or $0.0022/GB/month*</small> |
+
+[^1]: inodes are filesystem objects like files and directories
+
+Oak storage is readily available from [Sherlock](http://www.sherlock.stanford.edu/), [SCG](https://login.scg.stanford.edu/) and [XStream](http://xstream.stanford.edu/) HPC clusters,
+but also from multi-protocol gateways (Globus, SFTP, NFSv4, SMB/CIFS...). Shared Globus and SFTP gateways are available for all, but personalized gateway service, like SMB or NFS,
+will incur additional costs to the PI:
 
 |  Service flavor | Service description | Service price |
 |-----------------|---------------------|---------------|
-| **Filespace**   | PIs/Faculty rent disk space in increments of **10 TB and 1.5 million inodes**[^1]. | $42.95 per 10TB / month<br> <small>*or $50 per TB / year*</small> |
-| **JBOD**        | PIs/Faculty purchase one or more full disk arrays (JBODs), with **550 TB usable capacity** each, that is/are supported and administered by the SRCC team as part of the overall Oak service. A JBOD comes with a maximum of 82.5 million inodes**. | JBOD cost[^2] + $687 per JBOD / month<br><small>(service only)</small> |
-
-[^1]: JBOD pricing is dependent upon hard disk market variations ([contact us for current pricing](mailto:srcc-support@stanford.edu?subject=Oak%20JBOD%20pricing))
-[^2]: inodes are filesystem objects like files and directories
-
-Oak storage is readily available from both the [Sherlock](http://www.sherlock.stanford.edu/) and [XStream](http://xstream.stanford.edu/) HPC clusters, but also from multi-protocol gateways (Globus, SFTP, NFSv4, Samba/CIFS...). *Restrictions may apply and personalized gateway service will incur additional costs to the PI.*
+| **Gateway**     | Access to and management of gateway to Oak Storage | $71 / month per gateway<br> |
 
 {% include alert.html type="warning" title="Important!" content="Oak is NOT <a href='https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act'>HIPAA</a> compliant and is not a storage choice for any data that include <a href='https://en.wikipedia.org/wiki/Protected_health_information'>PHI</a> or <a href='https://en.wikipedia.org/wiki/Personally_identifiable_information'>PII</a>. The system is approved for storing Low and Moderate Risk data only and is not suitable for data classified as <a href='https://dataclass.stanford.edu'>high-risk</a>. For more information about data risk classifications, see the <a href='https://uit.stanford.edu/guide/riskclassifications'>Information Security Risk Classification page</a>" %}
+
+{% include alert.html type="info" title="Service Description" content="For more details about Oak, please look at the official Oak Service Description available <a href='https://stanford.box.com/s/t979jbzw5ejbf2u2w0781hayke1k384y'>here</a> (Stanford only)." %}
+
 
 ## Oak group space
 
