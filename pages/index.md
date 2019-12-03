@@ -22,7 +22,7 @@ It is based on [Lustre](http://lustre.org), a distributed parallel file system w
 both in performance and storage capacity.
 
 Oak is particularly well suited to store large group-shared datasets, curated output of HPC job campaigns and archives at a
-very affordable price. Oak is available from multi-protocol gateways (like Globus, SFTP and SMB) and is
+very affordable price. Oak is available through multi-protocol gateways (like Globus, SFTP and SMB) and is
 mounted on the Sherlock HPC cluster. Based on off-the-shelf components and open source software, it can easily
 grow in order to accommodate the research projects’ increasing storage requirements, up to tens of petabytes.
 
@@ -35,13 +35,13 @@ Two flavors of the storage service are available (charged monthly):
 
 [^1]: inodes are filesystem objects like files and directories
 
-Oak storage is readily available from [Sherlock](http://www.sherlock.stanford.edu/), [SCG](https://login.scg.stanford.edu/) and [XStream](http://xstream.stanford.edu/) HPC clusters,
-but also from multi-protocol gateways (Globus, SFTP, NFSv4, SMB/CIFS...). Shared Globus and SFTP gateways are available for all, but personalized gateway service, like SMB or NFS,
-will incur additional costs to the PI:
+Oak storage is readily available from [Sherlock](http://www.sherlock.stanford.edu/) and [SCG](https://login.scg.stanford.edu/),
+but also through multi-protocol gateways (Globus, SFTP, NFSv4, SMB/CIFS...). Shared Globus and SFTP gateways are available for all, but dedicated gateways,
+like SMB or NFS, are also available as an option:
 
 |  Service flavor | Service description | Service price |
 |-----------------|---------------------|---------------|
-| **Gateway**     | Access to and management of gateway to Oak Storage | $71 / month per gateway<br> |
+| **GATEWAY**     | Access to and management of gateway to Oak Storage | $71 / month per gateway<br> |
 
 {% include alert.html type="warning" title="Important!" content="Oak is NOT <a href='https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act'>HIPAA</a> compliant and is not a storage choice for any data that include <a href='https://en.wikipedia.org/wiki/Protected_health_information'>PHI</a> or <a href='https://en.wikipedia.org/wiki/Personally_identifiable_information'>PII</a>. The system is approved for storing Low and Moderate Risk data only and is not suitable for data classified as <a href='https://dataclass.stanford.edu'>high-risk</a>. For more information about data risk classifications, see the <a href='https://uit.stanford.edu/guide/riskclassifications'>Information Security Risk Classification page</a>" %}
 
