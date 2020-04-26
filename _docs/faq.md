@@ -26,6 +26,14 @@ Oak storage is available from all nodes on [Sherlock](http://www.sherlock.stanfo
 
 {% include alert.html type="warning" title="Important!" content="You need an account on both Oak and Sherlock (or XStream) to access Oak from Sherlock (or XStream). The environment variable **$OAK** should be defined on Sherlock and XStream and contains the path to your Oak group directory. You may also use the full path starting with /oak as described above." %}
 
+## Can I Access Oak from SCG?
+
+As of January 2020, all SCG labs (in /labs) and projects (in /projects) are hosted on Oak.  When you get access to a lab or project in SCG, you also get access to the corresponding space in Oak.  SCG is connected to Oak using a pair of 100 Gigabit Ethernet Lustre routers.
+
+Groups who directly rent Oak storage will be able to access that Oak storage under /oak, _so long as SCG users are in the corresponding workgroup_.  The groups used to manage SCG labs and projects space are separate from the workgroups used to manage directly-rented Oak space.
+
+The $OAK environment variable is not set on SCG.
+
 ## Can I Archive files to Oak from Sherlock?
 
 The [mpiFileUtils](https://github.com/hpc/mpifileutils) utilities are designed to copy files in parallel so you can quickly archives terabytes of data from scratch to Oak. The example below shows how to launch screen and launch a job that uses the dcp tool to copy a large directory:
